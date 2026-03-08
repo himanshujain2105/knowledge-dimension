@@ -2985,7 +2985,7 @@ margin-left:40px
                 <b:class cond='data:view.isSearch and data:view.search.query' name='search-focused'/>
 
                 <b:if cond='data:view.isSingleItem'>
-                  <a class='return_link' expr:href='data:blog.homepageUrl'>
+                  <a class='return_link' expr:aria-label='data:messages.home' expr:href='data:blog.homepageUrl'>
                     <b:include data='{ button: true, iconClass: &quot;back-button rtl-reversible-icon flat-icon-button ripple&quot; }' name='backArrowIcon'/>
                   </a>
                 <b:else/>
@@ -3344,7 +3344,7 @@ margin-left:40px
 </b:includable>
                     <b:includable id='commentAuthorAvatar'>
   <div class='avatar-image-container'>
-    <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
+    <img alt='' class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
   </div>
 </b:includable>
                     <b:includable id='commentDeleteIcon' var='comment'>
@@ -3354,8 +3354,8 @@ margin-left:40px
         <div class='goog-inline-block comment-action-icon'/>
       </div>
     <b:else/>
-      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
-        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      <a class='comment-delete' expr:aria-label='data:messages.deleteComment' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
+        <img alt='' src='https://resources.blogblog.com/img/icon_delete13.gif'/>
       </a>
     </b:if>
   </span>
@@ -3608,7 +3608,7 @@ margin-left:40px
   <b:if cond='data:post.author.aboutMe and data:view.isPost'>
     <div class='author-profile'>
       <b:if cond='data:post.author.authorPhoto.url'>
-        <img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/>
+        <img alt='' class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/>
         <div class='author-about'>
           <b:include data='post' name='aboutPostAuthor'/>
         </div>

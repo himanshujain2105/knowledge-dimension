@@ -13,7 +13,6 @@
 <Variable name="damionRegular36" description="Damion Regular 36" type="font" default="400 36px Damion, cursive" hideEditor="true"  value="400 36px Damion, cursive"/>
 <Variable name="damionRegular62" description="Damion Regular 62" type="font" default="400 62px Damion, cursive" hideEditor="true"  value="400 62px Damion, cursive"/>
 <Variable name="playfairDisplayBlack28" description="Playfair Display Black 28" type="font" default="900 28px Playfair Display, serif" hideEditor="true"  value="900 28px Playfair Display, serif"/>
-<Variable name="playfairDisplayBlack36" description="Playfair Display Black 36" type="font" default="900 36px Playfair Display, serif" hideEditor="true"  value="900 36px Playfair Display, serif"/>
 <Variable name="playfairDisplayBlack44" description="Playfair Display Black 44" type="font" default="900 44px Playfair Display, serif" hideEditor="true"  value="900 44px Playfair Display, serif"/>
 <Variable name="robotoNormal15" description="Roboto Normal 15" type="font" default="15px Roboto, sans-serif" hideEditor="true"  value="15px Roboto, sans-serif"/>
 <Variable name="robotoNormal16" description="Roboto Normal 16" type="font" default="16px Roboto, sans-serif" hideEditor="true"  value="16px Roboto, sans-serif"/>

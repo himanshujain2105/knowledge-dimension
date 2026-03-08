@@ -24,17 +24,17 @@
 
 <!-- Variable definitions -->
 
-<Variable name="keycolor" description="Main Color" type="color" default="#2196f3"  value="#2196f3"/>
+<Variable name="keycolor" description="Main Color" type="color" default="#2196f3"  value="#1565C0"/>
 <Variable name="startSide" description="Start side in blog language" type="automatic" default="left" hideEditor="true" />
 <Variable name="endSide" description="End side in blog language" type="automatic" default="right" hideEditor="true" />
 
 <Group description="Page Text">
   <Variable name="body.text.font" description="Font"
       type="font"
-      default="$(robotoNormal15)"  value="15px Roboto, sans-serif"/>
+      default="$(robotoNormal15)"  value="400 16px Roboto, sans-serif"/>
   <Variable name="body.text.color" description="Color"
       type="color"
-      default="#757575"  value="#757575"/>
+      default="#757575"  value="#333333"/>
 </Group>
 
 <Group description="Backgrounds">
@@ -42,17 +42,17 @@
       type="length"
       min="420px"
       max="640px"
-      default="480px"  value="480px"/>
+      default="480px"  value="300px"/>
   <Variable name="body.background" description="Background"
       color="$(body.background.color)"
       type="background"
-      default="$(color) none repeat scroll top left"  value="$(color) url(https://themes.googleusercontent.com/image?id=L1lcAxxz0CLgsDzixEprHJ2F38TyEjCyE3RSAjynQDks0lT1BDc1OxXKaTEdLc89HPvdB11X9FDw) no-repeat scroll top center /* Credit: Michael Elkan (http://www.offset.com/photos/394244) */;"/>
+      default="$(color) none repeat scroll top left"  value="$(color) none repeat scroll top left"/>
   <Variable name="body.background.color" description="Body background color"
       type="color"
-      default="#eee"  value="#eeeeee"/>
+      default="#eee"  value="#F4F7F6"/>
   <Variable name="posts.background.color" description="Post background color"
       type="color"
-      default="#fff"  value="#ffffff"/>
+      default="#fff"  value="#FFFFFF"/>
   <Variable name="body.background.blur" description="Background blur"
       type="length"
       min="0px"
@@ -63,22 +63,22 @@
 <Group description="Links">
   <Variable name="body.link.color" description="Link color"
       type="color"
-      default="#2196f3"  value="#2196f3"/>
+      default="#2196f3"  value="#1565C0"/>
   <Variable name="body.link.visited.color" description="Visited link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#0D47A1"/>
   <Variable name="body.link.hover.color" description="Link Hover Color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1976D2"/>
 </Group>
 
 <Group description="Blog title" selector="div.widget.Header">
   <Variable name="blog.title.font" description="Font"
       type="font"
-      default="$(robotoBold45)"  value="bold 45px Roboto, sans-serif"/>
+      default="$(robotoBold45)"  value="900 48px 'Playfair Display', serif"/>
   <Variable name="blog.title.color" description="Color"
       type="color"
-      default="#fff"  value="#ffffff"/>
+      default="#fff"  value="#FFFFFF"/>
   <Variable name="header.icons.color"
       description="Background icons color"
       type="color"
@@ -93,10 +93,10 @@
       default="700 normal $(size) $(family)"  value="700 normal $(size) $(family)"/>
   <Variable name="tabs.color" description="Text color"
       type="color"
-      default="#ccc"  value="#cccccc"/>
+      default="#ccc"  value="#E0E0E0"/>
   <Variable name="tabs.selected.color" description="Selected color"
       type="color"
-      default="#fff"  value="#ffffff"/>
+      default="#fff"  value="#FFFFFF"/>
   <Variable name="tabs.overflow.background.color" description="Popup background color"
       type="color"
       default="$(posts.background.color)"  value="#ffffff"/>
@@ -111,16 +111,16 @@
 <Group description="Posts" selector="div.widget.Blog">
   <Variable name="posts.title.color" description="Post title color"
       type="color"
-      default="#212121"  value="#212121"/>
+      default="#212121"  value="#003366"/>
   <Variable name="posts.title.font" description="Post title font"
       type="font"
-      default="$(robotoBold22)"  value="bold 22px Roboto, sans-serif"/>
+      default="$(robotoBold22)"  value="900 26px 'Playfair Display', serif"/>
   <Variable name="posts.stream.title.font" description="Post title stream font"
       type="font"
       default="$(robotoBold30)"  value="bold 30px Roboto, sans-serif"/>
   <Variable name="posts.text.font" description="Post text font"
       type="font"
-      default="$(body.text.font)"  value="15px Roboto, sans-serif"/>
+      default="$(body.text.font)"  value="400 16px Roboto, sans-serif"/>
   <Variable name="posts.text.color" description="Post text color"
       type="color"
       default="$(body.text.color)"  value="#757575"/>
@@ -271,7 +271,7 @@
 
 <Group description="Widths">
   <Variable name="sidebar.width" description="Sidebar width" type="length"
-            min="100px" max="1000px" default="284px"  value="284px"/>
+            min="100px" max="1000px" default="284px"  value="320px"/>
   <Variable name="content.width" description="Content width" type="length"
             min="600px" max="2400px" default="922px"  value="922px"/>
   <Variable name="content.margin" description="Content margin" type="length"

@@ -2985,7 +2985,7 @@ margin-left:40px
                 <b:class cond='data:view.isSearch and data:view.search.query' name='search-focused'/>
 
                 <b:if cond='data:view.isSingleItem'>
-                  <a class='return_link' expr:href='data:blog.homepageUrl'>
+                  <a class='return_link' expr:aria-label='data:messages.home' expr:href='data:blog.homepageUrl'>
                     <b:include data='{ button: true, iconClass: &quot;back-button rtl-reversible-icon flat-icon-button ripple&quot; }' name='backArrowIcon'/>
                   </a>
                 <b:else/>

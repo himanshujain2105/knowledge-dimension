@@ -2986,10 +2986,10 @@ margin-left:40px
 
                 <b:if cond='data:view.isSingleItem'>
                   <a class='return_link' expr:href='data:blog.homepageUrl'>
-                    <b:include data='{ button: true, iconClass: &quot;back-button rtl-reversible-icon flat-icon-button ripple&quot; }' name='backArrowIcon'/>
+                    <b:include data='{ button: true, ariaLabel: data:messages.home, iconClass: &quot;back-button rtl-reversible-icon flat-icon-button ripple&quot; }' name='backArrowIcon'/>
                   </a>
                 <b:else/>
-                  <b:include data='{ button: true, iconClass: &quot;hamburger-menu flat-icon-button ripple&quot; }' name='menuIcon'/>
+                  <b:include data='{ button: true, ariaLabel: data:messages.more, iconClass: &quot;hamburger-menu flat-icon-button ripple&quot; }' name='menuIcon'/>
                 </b:if>
 
                 <b:if cond='data:view.isLayoutMode or data:widgets any (w =&gt; w.sectionId == &quot;search_top&quot;)'>

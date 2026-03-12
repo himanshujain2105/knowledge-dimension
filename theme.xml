@@ -24,7 +24,7 @@
 
 <!-- Variable definitions -->
 
-<Variable name="keycolor" description="Main Color" type="color" default="#2196f3"  value="#2196f3"/>
+<Variable name="keycolor" description="Main Color" type="color" default="#1a237e"  value="#1a237e"/>
 <Variable name="startSide" description="Start side in blog language" type="automatic" default="left" hideEditor="true" />
 <Variable name="endSide" description="End side in blog language" type="automatic" default="right" hideEditor="true" />
 
@@ -63,19 +63,19 @@
 <Group description="Links">
   <Variable name="body.link.color" description="Link color"
       type="color"
-      default="#2196f3"  value="#2196f3"/>
+      default="#1a237e"  value="#1a237e"/>
   <Variable name="body.link.visited.color" description="Visited link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a237e"/>
   <Variable name="body.link.hover.color" description="Link Hover Color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a237e"/>
 </Group>
 
 <Group description="Blog title" selector="div.widget.Header">
   <Variable name="blog.title.font" description="Font"
       type="font"
-      default="$(robotoBold45)"  value="bold 45px Roboto, sans-serif"/>
+      default="$(playfairDisplayBlack44)"  value="bold 45px Playfair Display, serif"/>
   <Variable name="blog.title.color" description="Color"
       type="color"
       default="#fff"  value="#ffffff"/>
@@ -114,10 +114,10 @@
       default="#212121"  value="#212121"/>
   <Variable name="posts.title.font" description="Post title font"
       type="font"
-      default="$(robotoBold22)"  value="bold 22px Roboto, sans-serif"/>
+      default="$(playfairDisplayBlack28)"  value="bold 22px Playfair Display, serif"/>
   <Variable name="posts.stream.title.font" description="Post title stream font"
       type="font"
-      default="$(robotoBold30)"  value="bold 30px Roboto, sans-serif"/>
+      default="$(playfairDisplayBlack36)"  value="bold 30px Playfair Display, serif"/>
   <Variable name="posts.text.font" description="Post text font"
       type="font"
       default="$(body.text.font)"  value="15px Roboto, sans-serif"/>
@@ -185,22 +185,22 @@
   <Variable name="popularposts.link.color"
       description="Popular post link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a237e"/>
 </Group>
 
 <Group description="Post navigation" selector='div.blog-pager'>
   <Variable name="posts.navigation.link.color"
       description="Post navigation links color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a237e"/>
   <Variable name="posts.navigation.link.visited.color"
       description="Post navigation links visited color"
       type="color"
-      default="$(body.link.visited.color)"  value="#2196f3"/>
+      default="$(body.link.visited.color)"  value="#1a237e"/>
   <Variable name="posts.navigation.link.hover.color"
       description="Post navigations links hover color"
       type="color"
-      default="$(body.link.hover.color)"  value="#2196f3"/>
+      default="$(body.link.hover.color)"  value="#1a237e"/>
 </Group>
 
 <Group description="Sidebar" selector="div.sidebar-container">
@@ -262,7 +262,7 @@
       default="$(body.text.color)"  value="#757575"/>
   <Variable name="attribution.link.color" description="Attribution link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#1a237e"/>
   <Variable name="attribution.icon.color" description="Attribution icon color"
       type="color"
       default="#707070"
@@ -2986,10 +2986,10 @@ margin-left:40px
 
                 <b:if cond='data:view.isSingleItem'>
                   <a class='return_link' expr:href='data:blog.homepageUrl'>
-                    <b:include data='{ button: true, iconClass: &quot;back-button rtl-reversible-icon flat-icon-button ripple&quot; }' name='backArrowIcon'/>
+                    <b:include data='{ button: true, iconClass: "back-button rtl-reversible-icon flat-icon-button ripple", ariaLabel: data:messages.archive }' name='backArrowIcon'/>
                   </a>
                 <b:else/>
-                  <b:include data='{ button: true, iconClass: &quot;hamburger-menu flat-icon-button ripple&quot; }' name='menuIcon'/>
+                  <b:include data='{ button: true, iconClass: "hamburger-menu flat-icon-button ripple", ariaLabel: data:messages.showAll }' name='menuIcon'/>
                 </b:if>
 
                 <b:if cond='data:view.isLayoutMode or data:widgets any (w =&gt; w.sectionId == &quot;search_top&quot;)'>
@@ -3355,7 +3355,7 @@ margin-left:40px
       </div>
     <b:else/>
       <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
-        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+        <img alt='' src='https://resources.blogblog.com/img/icon_delete13.gif'/>
       </a>
     </b:if>
   </span>
@@ -3888,7 +3888,7 @@ margin-left:40px
     </div>
     <aside class='sidebar-container container sidebar-invisible' role='complementary'>
       <div class='navigation'>
-        <b:include data='{ button: true, iconClass: &quot;flat-icon-button ripple sidebar-back&quot; }' name='backArrowIcon'/>
+        <b:include data='{ button: true, iconClass: "flat-icon-button ripple sidebar-back", ariaLabel: data:messages.archive }' name='backArrowIcon'/>
       </div>
       <div class='sidebar_top_wrapper'>
         <b:class cond='data:widgets none w =&gt; w.sectionId == &quot;sidebar_top&quot;' name='no-items'/>

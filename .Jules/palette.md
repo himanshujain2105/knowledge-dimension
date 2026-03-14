@@ -1,0 +1,3 @@
+## 2024-05-18 - Missing alt attributes on avatar/profile images
+**Learning:** Found multiple instances of `<img>` tags representing user avatars or profile images lacking `alt=''` attributes (since they are often accompanied by author names/links) or having empty/missing alt texts that might impact accessibility on decorative profile images.
+**Action:** When fixing accessibility for decorative images, or images wrapped in an anchor tag that already possess a localized title or accompanying text, ensure `alt=''` is set on the `<img>` tag to prevent redundant and confusing screen reader announcements.

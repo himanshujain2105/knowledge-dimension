@@ -1,0 +1,3 @@
+## 2024-05-18 - Improve accessibility with ARIA labels
+**Learning:** Add `ariaLabel` attributes with appropriate `data:messages.*` localized strings to Blogger `<b:include>` tags for buttons to ensure screen readers can announce them.
+**Action:** When working on Blogger themes, ensure that all `button: true` components receive an `ariaLabel` passing a localized message instead of hardcoding a string.
